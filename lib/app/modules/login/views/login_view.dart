@@ -37,6 +37,7 @@ class LoginView extends GetView<LoginController> {
               onPressed: () =>
                   cAuth.login(controller.cEmail.text, controller.cPass.text),
               child: Text("Login"),
+              
             ),
           ],
         ),

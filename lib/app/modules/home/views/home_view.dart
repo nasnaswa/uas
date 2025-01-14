@@ -43,7 +43,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
     return Scaffold(
       drawer: drawer(),
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor: const Color.fromARGB(255, 199, 199, 199),
         titleSpacing: 0,
         title: Text(_fragment[_index]['title']),
         actions: [
@@ -63,7 +63,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
         children: [
           DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.teal,
+                color: const Color.fromARGB(255, 199, 199, 199),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -79,7 +79,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
                   SizedBox(
                     height: 2,
@@ -88,7 +88,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
                     'Admin',
                     style: TextStyle(
                       fontSize: 12,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                 ],
@@ -101,8 +101,8 @@ class _DashboardAdminState extends State<DashboardAdmin> {
             leading: Icon(Icons.dashboard),
             title: Text('Dashboard'),
             trailing: Icon(Icons.navigate_next),
-            iconColor: Colors.teal,
-            textColor: Colors.teal,
+            iconColor: Colors.black,
+            textColor: Colors.black,
           ),
           ListTile(
             onTap: () {
@@ -112,8 +112,8 @@ class _DashboardAdminState extends State<DashboardAdmin> {
             leading: Icon(Icons.people),
             title: Text('Data Barang'),
             trailing: Icon(Icons.navigate_next),
-            iconColor: Colors.teal,
-            textColor: Colors.teal,
+            iconColor: Colors.black,
+            textColor: Colors.black,
           ),
           ListTile(
             onTap: () {
@@ -123,10 +123,9 @@ class _DashboardAdminState extends State<DashboardAdmin> {
             leading: Icon(Icons.logout),
             title: Text('Logout'),
             trailing: Icon(Icons.navigate_next),
-            iconColor: Colors.teal,
-            textColor: Colors.teal,
+            iconColor: Colors.black,
+            textColor: Colors.black,
           ),
-
         ],
       ),
     );
